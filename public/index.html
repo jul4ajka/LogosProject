@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <base href="/">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/ngDialog.min.css">
+    <link rel="stylesheet" href="./css/ngDialog-theme-default.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <script src="./js/jquery-2.1.3.min.js"></script>
+    <script src="./js/angular.min.js"></script>
+    <script src="./js/ngDialog.min.js"></script>
+    <script src="./js/angular-route.js"></script>
+    <script src="./js/my.js"></script>
+</head>
+
+<body ng-controller="defaultCtrl">
+
+    <div class="headerField">
+        <login-block></login-block>
+        <slider-block></slider-block>
+    </div>
+
+    <menu-block></menu-block>
+
+    <!--Home page-->
+    <div class="mainBlock" ng-show="homeStatus">
+        <chat-block></chat-block>
+        <items-block></items-block>
+    </div>
+
+    <!--Contact page-->
+    <contact-block></contact-block>
+
+    <!--Mail page-->
+    <mail-block></mail-block>
+
+    <!--Profile page-->
+    <profile-block></profile-block>
+
+
+</body>
+
+</html>

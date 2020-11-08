@@ -1,0 +1,65 @@
+<!--Авторизація-->
+<div class="authPosition">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12">
+            <div class="panel panel-primary">
+                <div class="panel-body" ng-show="newUser">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <form role="form" name="myForm" novalidate>
+                                <div class="centralBlock">
+                                    <div class="leftBlock">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><span
+                                                    class="glyphicon glyphicon-user"></span></span>
+                                            <input type="text" class="form-control" ng-model="login"
+                                                   placeholder="User name" required autofocus/>
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><span
+                                                    class="glyphicon glyphicon-lock"></span></span>
+                                            <input type="password" class="form-control" ng-model="password"
+                                                   placeholder="Password" required/>
+                                        </div>
+                                    </div>
+                                    <div class="leftBlock">
+                                        <p>
+                                            <a ng-click="forget()">Forget password?</a></p>
+                                        Don`t have acc? <a ng-click="registr()">Registration</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body" ng-show="enterLogin">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 login-box">
+                            <form role="form">
+                                <div class="centralBlock">
+                                    <div class="leftBlock">
+                                        <p class="error">{{userIn}}</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <button type="button" class="btn btn-labeled btn-success" ng-click="check()"
+                                    ng-disabled="myForm.$invalid">
+                                <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>LogIn
+                            </button>
+                            <button type="button" class="btn btn-labeled btn-danger" ng-click="logOut()">
+                                <span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span>Exit
+                            </button>
+                            <div class="error">{{user}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

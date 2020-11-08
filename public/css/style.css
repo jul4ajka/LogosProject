@@ -1,0 +1,446 @@
+body {
+    background-color: #a5d5ff;
+    background-size: cover;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/*Header*/
+
+.authPosition {
+    margin-left: 10px;
+    width: 418px;
+    display: inline-block;
+    height: 200px;
+}
+
+.topNavi {
+    margin-top: 4px;
+    display: inline-block;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.headerField {
+    height: 235px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.row {
+    margin-right: 0;
+}
+
+
+/*Menu-bar*/
+
+nav {
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+    background: #48cfad;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: -4px;
+    text-align: center;
+}
+
+nav ul li:first-child a {
+    width: 49px;
+    padding: 15px 0;
+}
+
+nav ul li:last-child {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    background: #48cfad;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.2s linear;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: #37bc9b;
+}
+
+nav ul li a:active {
+    background: #37bc9b;
+}
+
+nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 240px;
+    border-bottom: 4px solid #48cfad;
+}
+
+nav ul li ul li {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+nav ul li ul li a {
+    display: block;
+    background: #3a3a3a;
+    padding: 10px 15px;
+}
+
+nav ul li ul li a:first-child {
+    background: #3a3a3a;
+    width: auto;
+    border-left: 4px solid transparent;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+nav ul li ul li a:hover {
+    background: #333;
+    border-left: 4px solid #48cfad;
+}
+
+#block-for-slider {
+    width: 850px;
+    border: 3px solid white;
+}
+
+
+/*Slider*/
+
+#viewport {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+#slidewrapper {
+    position: relative;
+    width: calc(100% * 4);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: cubic-bezier(.67, .01, .23, 1);
+    -o-transition-timing-function: cubic-bezier(.67, .01, .23, 1);
+    transition-timing-function: cubic-bezier(.67, .01, .23, 1);
+}
+
+#slidewrapper,
+#slidewrapper ul,
+#slidewrapper li {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    width: calc(100%/4);
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+.slide-img {
+    width: 100%;
+}
+
+#prev-btn,
+#next-btn {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    top: calc(50% - 25px);
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 20px;
+}
+
+#next-btn {
+    right: 20px;
+}
+
+#nav-btns {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.slide-nav-btn {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.slide-nav-btn:hover {
+    cursor: pointer;
+}
+
+
+/*Main*/
+
+.mainBlock {
+    width: 1300px;
+    height: 380px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/*Chat*/
+
+.chatBlock {
+    width: 250px;
+    height: 380px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.textChat {}
+
+.mainChat {
+    text-align: left;
+    width: 230px;
+    height: 250px;
+    margin: 5px;
+    padding: 5px;
+    background: white;
+    font-size: 10px;
+    word-wrap: break-word;
+    overflow: scroll;
+}
+
+
+/*Items*/
+
+.itemsBlock {
+    width: 1007px;
+    height: 380px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.headItemsBlock {
+    width: 1005px;
+    height: 40px;
+    background: white;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    padding: 5px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.choosenItem {
+    background-color: gainsboro;
+    border-radius: 5px;
+}
+
+.addItemButton {
+    font-size: 20px;
+    vertical-align: 10px;
+    margin-left: 40px;
+}
+
+.newItemBlock {
+    width: 500px;
+    height: 200px;
+    margin: auto;
+}
+
+.pagin {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 288px;
+    border-radius: 20px;
+}
+
+.items {
+    width: 1000px;
+    min-height: 200px;
+    margin: auto;
+}
+
+.pagAddr {
+    cursor: pointer;
+}
+
+
+/*Other*/
+
+.panel {
+    background: none;
+}
+
+.leftBlock {
+    width: 150px;
+    float: left;
+    margin-left: 25px;
+}
+
+.centralBlock {
+    width: 360px;
+    height: 100px;
+}
+
+.panel-body {
+    height: 100px;
+}
+
+.error {
+    color: red;
+    float: right;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+ul {
+    padding: 0;
+}
+
+.paggAddrUl {
+    margin: auto;
+    line-height: 48px;
+}
+
+.item {
+    width: 120px;
+    min-height: 100px;
+    float: left;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+/*Contact*/
+
+.contactField {
+    width: 500px;
+    height: 200px;
+    background: white;
+    margin: auto;
+}
+
+.profileField {
+    width: 500px;
+    height: 200px;
+    background: white;
+    margin: auto;
+    text-align: center;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+
+
+/*Send Mail*/
+
+.mailField {
+    width: 500px;
+    height: 200px;
+    background: white;
+    margin: auto;
+    text-align: center;
+}
+
+
+/*Fonts*/
+
+h1 {
+    margin-top: 0;
+}
+
+h3 {
+    margin-top: 1px;
+}
+
+label.uploadbutton input {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: -20px;
+    margin-left: -10px;
+    z-index: -1;
+}
+
+label.uploadbutton .button {
+    width: 100px;
+    height: 20px;
+    background: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+label.uploadbutton .button:active {
+    background: green;
+}
+
+
+}

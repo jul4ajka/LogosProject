@@ -1,0 +1,25 @@
+<div class="chatBlock">
+<h3 class="header" ng-init="textHeader='Chatrik'">{{textHeader}}</h3>
+<div class="main">
+    <div class="profile">
+        <input type="text" placeholder="Enter your Name" ng-model="Name" class="nameField">
+        <button ng-click="EnterProfile()" class="EnterNameText">Ok</button>
+    </div>
+
+    <div class="mainChat">
+        <ul>
+            <li ng-repeat="x in textiki">{{x.date | date: " dd/MM/yyyy/ HH:mm "}}&nbsp;&nbsp;&nbsp;{{x.nameField}}:&nbsp;&nbsp;&nbsp;{{x.textField}}
+            </li>
+        </ul>
+
+        <p> &nbsp;&nbsp;&nbsp;{{nameField}}&nbsp;&nbsp;&nbsp;{{textField}} </p>
+    </div>
+
+</div>
+
+<div class="textChat ">
+    <input type="text " placeholder="Enter text here " ng-model="textField " class="inputText ">
+    <button ng-click="EnterText() " class="sendButton ">Send</button>
+</div>
+
+</div>
